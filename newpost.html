@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css"/>
+    
+    <script src="http://cloud.tinymce.com/stable/tinymce.min.js?apiKey=bumwimla4x8aya7ma6aravphz955py2dgjhd48tp9p5h4q0r"></script>
+  <script>
+  tinymce.init({
+    selector: '#myTextarea',
+    theme: 'modern',
+    width: 900,
+    height: 400,
+    plugins: [
+      'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
+      'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+      'save table contextmenu directionality emoticons template paste textcolor'
+    ],
+    content_css: 'css/content.css',
+    toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons'
+  });
+  </script>
+    
+    <title>New Post</title>
+</head>
+
+
+<body>
+    <header>
+    <nav class="navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"> AUST Programming Group</a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#AUSTPG">Blog</a>
+                    </li>
+                    <li>
+                        <a href="forum.html">Forum</a>
+                    </li>
+                    <li>
+                        <a href="#Contests">Contests</a>
+                    </li>
+                    <li>
+                        <a href="#Events">Upcoming Events</a>
+                    </li>
+                    <li>
+                        <a href="#RankList">Rank List</a>
+                    </li>
+                </ul>
+
+
+                <div class="login navbar-right">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="login.html">
+                                <span class="glyphicon glyphicon-lock"></span>
+                                Login
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="registration.html">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Register</a>
+                        </li>
+                        <li>
+                            <a id="nav_search" data-herf="search">
+                                <span class="glyphicon glyphicon-search"></span>
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bar" id="search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div id="imaginary_container">
+                            <div class="input-group stylish-input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-addon">
+                                <button type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>  
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="body" class="newpost"><h1>Create a New Post<br/></h1>
+  <form method="post">
+    <textarea id="myTextarea">Hello, World!</textarea>
+  </form>
+</div>
+
+
+
+<!--footer start from here-->
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">USEFUL LINKS</h6>
+                <ul class="footer-ul">
+                    <li><a href="#"> AUST Official Website</a></li>
+                    <li><a href="#"> Shafaets Planet</a></li>
+                    <li><a href="#"> StackOverFlow</a></li>
+                    <li><a href="#"> GitHub</a></li>
+                    <li><a href="#"> Ranking</a></li>
+                    <li><a href="#"> Frequently Ask Questions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">Online Judge</h6>
+                <ul class="footer-ul">
+                    <li><a href="#"> UVA Online Judge</a></li>
+                    <li><a href="#"> URI Online Judge</a></li>
+                    <li><a href="#"> CodeForces</a></li>
+                    <li><a href="#"> Vjudge</a></li>
+                    <li><a href="#"> LightOj</a></li>
+                    <li><a href="#"> DevSkill</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright">
+    <div class="container">
+        <p>© 2017 - All Rights Reserved AUST CSE Society </p>
+    </div>
+</div>
+
+
+<script src="assets/js/jquery-3.2.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/customjs.js"></script>
+</body>
+</html>

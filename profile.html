@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Abdus Sayef Reyadh; CSE Batch-35, AUST; Email: sayef.reyadh@gmail.com">
+    <meta name="author" content="Asif Imtiaz Shaafi; CSE Batch-35, AUST; Email: a15shaafi.209@gmail.com">
+    <meta name="author" content="Sifat Ahmed; CSE Batch-35, AUST; Email: sifat.69@live.com">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/profile-style.css"/>
+
+    <title>profile</title>
+</head>
+
+<body>
+<nav class="navbar-inverse navbar-fixed-top" role="navigation">
+    <div id="topNavBar" class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> AUST Programming Group</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="forum.html">Forum</a>
+                </li>
+                <li>
+                    <a href="#contests">Contests</a>
+                </li>
+                <li>
+                    <a href="#events">Upcoming Events</a>
+                </li>
+                <li>
+                    <a href="#rankList">Rank List</a>
+                </li>
+            </ul>
+
+
+            <div class="login navbar-right">
+                <ul class="navbar-nav" style="list-style-type: none">
+                    <li id="profile_item" class="dropdown">
+
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img class="img-circle " width="25px" height="25px" style="display: inline-block;"
+                                 src="images/sifat.jpg">
+                            Sifat Ahmed
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul id="profile-dropdown" class="dropdown-menu navbar-inverse" >
+                            <li><a href="#">Blog Posts</a></li>
+                            <li><a href="#">Forum Posts</a></li>
+                            <li><a href="#">Code Posts</a></li>
+                            <!--todo fix the link-->
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a id="nav_search" data-herf="search">
+                            <span class="glyphicon glyphicon-search"></span>
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- The Search Modal -->
+<div id="searchModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="bar" id="search" style="display: flex; align-items: center;">
+            <div class="container">
+                <!--<div class="row">-->
+                <div class="col-sm-6 col-sm-offset-3">
+                    <!--<div id="imaginary_container">-->
+                    <div class="input-group stylish-input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-addon">
+                                <button type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                    </div>
+                    <!--</div>-->
+                </div>
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Main Content Body starts from here -->
+<div id="mainBody" class="container">
+    <div class="row">
+        <!-- Left Side Bar starts from here -->
+        <div id="profile-sidebar" class="col-md-3 col-xs-12">
+            <!--left side bar profile image goes here-->
+            <div class="profile-image">
+                <img class="img-circle img-responsive" src="images/sifat.jpg">
+            </div>
+            <div class="profile-name">
+                <p>Sifat Ahmed</p>
+            </div>
+            <!--    		sidebar submenu goes here-->
+            <div class="settings-bar">
+                <ul class="settings-item nav nav-pills nav-stacked">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-alert"></span> Overview</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-file"></span> Create Post</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-list"></span> All Posts</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Portfolio</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--middle bar starts from here-->
+
+
+        <div id="right-sidebar" class="col-md-9 col-xs-12">
+
+            <div id="top-row" class="row row-centered">
+
+                <div id="upcoming-contest" class="col-md-3 col-md-offset-1 col-centered">
+                    <div class="title-panel">
+                        <p>Upcoming Contest</p>
+                    </div>
+                    <div class="body-panel">
+                        <p class="text-title">12/12/2017</p>
+                        <p class="text-body">Intra AUST Fall 2017</p>
+                    </div>
+                </div>
+
+                <div id="problem-solve" class="col-md-3 col-md-offset-1 col-centered">
+                    <div class="title-panel">
+                        <p>Problems Solved</p>
+                    </div>
+                    <div class="body-panel">
+                        <p class="text-title-ps">50</p>
+                    </div>
+                </div>
+
+                <div id="rank" class="col-md-3 col-md-offset-1 col-centered">
+                    <div class="title-panel">
+                        <p>Your Rank</p>
+                    </div>
+                    <div class="body-panel">
+                        <p class="text-title-ps">#1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--bottom row of second column starts from here-->
+
+            <div id="bottom-row" class="row">
+
+                <div id="post-column" class="col-md-6">
+                    <div id="blog-post-row">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h4 align="center">
+                                    <u>Latest blog Posts</u>
+                                </h4>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="#">Big Integer কি?</a>
+                                    <br>
+                                    Created On: 07 July, 2017
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">রান টাইম ইরোর কেন হয়?</a>
+                                    <br>
+                                    Created On: 07 July, 2017
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">CodeBlocks কাজ করে না</a>
+                                    <br>
+                                    Created On: 07 July, 2017
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <a href="#seeall"
+                           style="color: #000; text-align: right; margin-top: -20px;margin-right:10px;display:inherit;">See
+                            All</a>
+
+                    </div>
+
+                    <div id="code-post-row">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h4 align="center">
+                                    <u>Latest Codes </u>
+                                </h4>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="#">Big Integer কি?</a>
+                                    <br>
+                                    Created On: 07 July, 2017
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">রান টাইম ইরোর কেন হয়?</a>
+                                    <br>
+                                    Created On: 07 July, 2017
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">CodeBlocks কাজ করে না</a>
+                                    <br>
+                                    Created On: 07 July, 2017
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <a href="#seeall"
+                           style="color: #000; text-align: right; margin-top: -20px;margin-right:10px;display:inherit;">See
+                            All</a>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div id="forum-post-row">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h4 align="center">
+                                    <u>Latest Forum Posts</u>
+                                </h4>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="#">Big Integer কি?</a>
+                                    <br>
+                                    Created On: 07 July, 2017
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">রান টাইম ইরোর কেন হয়?</a>
+                                    <br>
+                                    Created On: 07 July, 2017
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">CodeBlocks কাজ করে না</a>
+                                    <br>
+                                    Created On: 07 July, 2017
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <a href="#seeall"
+                           style="color: #000; text-align: right; margin-top: -20px;margin-right:10px;display:inherit;">See
+                            All</a>
+
+                    </div>
+                </div>
+
+                <div id="post-sidebar-right" class="col-md-3 col-md-offset-1">
+                    My Categories goes here
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--footer start from here-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12 paddingtop-bottom">
+                <h6 class="heading7">USEFUL LINKS</h6>
+                <ul class="footer-ul">
+                    <li><a href="#"> AUST Official Website</a></li>
+                    <li><a href="#"> Shafaets Planet</a></li>
+                    <li><a href="#"> StackOverFlow</a></li>
+                    <li><a href="#"> GitHub</a></li>
+                    <li><a href="#"> Ranking</a></li>
+                    <li><a href="#"> Frequently Ask Questions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-12 paddingtop-bottom">
+                <h6 class="heading7">Online Judge</h6>
+                <ul class="footer-ul">
+                    <li><a href="#"> UVA Online Judge</a></li>
+                    <li><a href="#"> URI Online Judge</a></li>
+                    <li><a href="#"> CodeForces</a></li>
+                    <li><a href="#"> Vjudge</a></li>
+                    <li><a href="#"> LightOj</a></li>
+                    <li><a href="#"> DevSkill</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright">
+    <div class="container">
+        <p>© 2017 - All Rights Reserved AUST CSE Society </p>
+    </div>
+</div>
+
+
+<script src="assets/js/jquery-3.2.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/customjs.js"></script>
+
+
+</body>
+</html>
